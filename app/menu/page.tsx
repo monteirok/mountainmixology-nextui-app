@@ -1,4 +1,4 @@
-import XmasMenu from '../components/Menus/XmasMenu';
+import { ReactElement, JSXElementConstructor, ReactNode, PromiseLikeOfReactNode, Key } from 'react';
 import Styles from './page.module.css';
 
 export default async function Menu() {
@@ -21,7 +21,7 @@ export default async function Menu() {
 
         {/* using custom api */}
         {
-          data.menus.map((item, index) => (
+          data.menus.map((item: { thumbnail: string | undefined; title: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | PromiseLikeOfReactNode | null | undefined; }, index: Key | null | undefined) => (
               <div className={Styles.menu} key={index}>
                   <img src={item.thumbnail} alt={item.title}/>
                   <div>

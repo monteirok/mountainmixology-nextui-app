@@ -1,6 +1,6 @@
 export async function GET(request: any, {params}: any) {
     const slug = params.slug
-    let response = {ok: false, message: 'Invalid Request'}
+    let response: {ok: boolean, message: string, menus: { id: number, title: string, description: string, category: string, thumbnail: string }[]} = {ok: false, message: 'Invalid Request', menus: []}
 
     if (slug === 'menus') {
         response = {
