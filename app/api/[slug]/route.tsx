@@ -14,7 +14,3 @@ export async function GET(request: any, {params}: any) {
 
     return Response.json(response)
 }
-
-export async function POST(request: { json: () => any }) {
-    const data = await request.json()
-}
