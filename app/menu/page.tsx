@@ -3,7 +3,7 @@ import Styles from './page.module.css';
 
 export default async function Menu() {
   const getMenus = async () => {
-    const response = await fetch('http://localhost:3000/api/menus', {
+    const response = await fetch('https://mountainmixology.ca/api/menus', {
         next: {revalidate:10}
     })
     return response.json()
