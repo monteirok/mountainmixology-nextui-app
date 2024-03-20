@@ -21,7 +21,7 @@ export default async function Menu() {
 
         {/* using custom api */}
         {
-          data.menus.map((item, index) => (
+          data.menus.map((item: any, index: any) => (
               <div className={Styles.menu} key={index}>
                   <img src={item.thumbnail} alt={item.title}/>
                   <div>
