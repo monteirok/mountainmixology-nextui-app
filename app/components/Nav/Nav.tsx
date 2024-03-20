@@ -1,12 +1,13 @@
 'use client'
-import React, { useEffect, useState } from "react";
+
+import React from 'react';
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button} from "@nextui-org/react";
 import LogoRect from '../Logo/LogoRect';
 import InstagramIcon from '../Socials/Instagram';
 import ReserveBtn from '../ReserveBtn/NavReserveBtn';
 import Styles from './Nav.module.css';
 
-export default function App() {
+export default function App() {  
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const menuItems = [
     { name: "Home", link: "/" },
@@ -15,7 +16,7 @@ export default function App() {
   ];
 
   return (
-    <Navbar className='dark' onMenuOpenChange={setIsMenuOpen} shouldHideOnScroll>
+    <Navbar className={Styles.nav} onMenuOpenChange={setIsMenuOpen} shouldHideOnScroll>
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}

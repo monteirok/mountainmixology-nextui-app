@@ -1,6 +1,7 @@
 .nav {
     height: 4.5rem !important;
-    background-color: var(--bg-dark) !important;
+    /* background-color: var(--bg-dark) !important; */
+    background-color: #ffffff00 !important;
 }
 
 .navLogo {
@@ -9,13 +10,19 @@
 
 .navLink {
     color: var(--primary-light) !important;
-    font-size: 1.05rem !important;
+    font-size: 1.1rem !important;
     font-weight: 600;
+    transition: all 250ms ease;
 }
     .navLink:hover {
-        scale: .98;
+        scale: .96;
         color: var(--link-hover) !important;
+        transition: all 250ms ease;
     }
+
+.activeLink {
+    color: var(--link-hover) !important;
+}
 
     .navHamburgerMenuIcon {
         color: var(--primary-light);
