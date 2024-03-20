@@ -1,4 +1,4 @@
-export async function GET(request, {params}) {
+export async function GET(request: any, {params}: any) {
     const slug = params.slug
     let response = {ok: false, message: 'Invalid Request'}
 
@@ -15,6 +15,6 @@ export async function GET(request, {params}) {
     return Response.json(response)
 }
 
-export async function POST(request) {
+export async function POST(request: { json: () => any }) {
     const data = await request.json()
 }
