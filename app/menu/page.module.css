@@ -1,9 +1,13 @@
 .mainContainer {
-    display: flex;
-    flex-direction: column;
-    /* gap: 3rem; */
-    justify-content: center;
-    align-items: center;
-    /* height: 100vh; */
-    text-align: center;
-  }
+  display: flex;
+  flex-direction: column;
+  /* gap: 3rem; */
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  text-align: center;
+}
+
+.menu {
+  margin: 3rem;
+}
