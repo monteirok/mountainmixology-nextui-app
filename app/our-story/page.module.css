@@ -1,0 +1,19 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 4.5rem);
+    text-align: center;
+  }
+  
+  .mainHeadContainer {
+    width: 40rem;
+    color: var(--primary-light);
+  }
+    .mainHeader {
+      margin: -.2rem 0;
+      font-size: 5rem;
+      font-weight: 800;
+    }

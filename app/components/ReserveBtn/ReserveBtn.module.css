@@ -1,0 +1,15 @@
+.navReserveBtn {
+    font-weight: 700 !important;
+}
+    .navReserveBtn:hover {
+        scale: .97;
+        opacity: .8 !important;
+    }
+
+.mainReserveBtn {
+    font-weight: 600 !important;
+    background-color: #f5a52330;
+}
+    .reserveBtn:hover {
+        scale: .97;
+    }

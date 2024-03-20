@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-dark: #161616;
+  --primary: #0070ef;
+  --primary-light: #cecece;
+  --link-hover: #f5a523;
+}
+
+* {
+  user-select: none;
+}
+
+html, body {
+  height: 100vh;
+  background-color: #161616 !important;
+  background-image: url(../public/images/backgrounds/3.png) !important;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  /* min-width: 950px; */
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.mainHeadContainer {
+  width: 40rem;
+  color: var(--primary-light);
+  margin-top: 4rem;
+}
+  .mainHeader {
+    margin: -.2rem 0;
+    font-size: 5rem;
+    font-weight: 800;
+  }
+  .mainSubHeader {
+    margin: 0 !important;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+    /* Styles for smaller screen sizes, i.e., phones */
+    @media (max-width: 600px) {
+      .mainHeadContainer {
+        width: fit-content;
+      }
+
+      .mainHeader {
+        margin-bottom: .5rem;
+        line-height: 4rem;
+        font-size: 4rem;
+      }
+
+      .mainSubHeader {
+        font-size: 1rem;
+      }
+    }
+
+.mainContentContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 80%;
+}
+  /* Styles for smaller screen sizes, i.e., phones */
+  @media (max-width: 940px) {
+    .mainContentContainer {
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      gap: 1rem;
+    }
+  }

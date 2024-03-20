@@ -1,0 +1,16 @@
+.cardContainer {
+    margin-top: 5rem;
+}
+
+.cardImg {
+    height: 15rem;
+    width: 15rem;
+}
+
+.cardText {
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+    .cardBtnText {
+        font-weight: 600;
+    }

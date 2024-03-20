@@ -1,0 +1,41 @@
+.nav {
+    height: 4.5rem !important;
+    background-color: var(--bg-dark) !important;
+}
+
+.navLogo {
+    margin-right: .8rem;
+}
+
+.navLink {
+    color: var(--primary-light) !important;
+    font-size: 1.05rem !important;
+    font-weight: 600;
+}
+    .navLink:hover {
+        scale: .98;
+        color: var(--link-hover) !important;
+    }
+
+    .navHamburgerMenuIcon {
+        color: var(--primary-light);
+    }
+        .navHamburgerMenuIcon:hover {
+            scale: .97;
+            opacity: .8;
+        }
+
+.navHamburgerMenu {
+    display: flex;
+    align-items: left;
+    padding: .7rem 1.1rem !important;
+    background-color: #161616a8 !important;
+}
+    .navMenuLink {
+        color: var(--primary-light) !important;
+        font-weight: 600;
+    }
+        .navMenuLink:hover {
+            scale: .99;
+            color: var(--link-hover) !important;
+        }

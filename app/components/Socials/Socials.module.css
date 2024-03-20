@@ -1,0 +1,8 @@
+.instagramIcon {
+    width: 1.6rem;
+    margin-top: .5rem;
+}
+    .instagramIcon:hover {
+        scale: .98;
+        opacity: .8;
+    }
