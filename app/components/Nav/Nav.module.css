@@ -1,48 +1,47 @@
 .nav {
-    height: 4.5rem !important;
     /* background-color: var(--bg-dark) !important; */
     background-color: #ffffff00 !important;
 }
 
 .navLogo {
-    margin-right: .8rem;
+    margin-right: .5rem;
 }
 
 .navLink {
-    color: var(--primary-light) !important;
-    font-size: 1.1rem !important;
+    font-size: 1.2rem !important;
     font-weight: 600;
-    transition: all 250ms ease;
+    color: var(--primary-light) !important;
+    transition: all 250ms ease !important;
 }
     .navLink:hover {
         scale: .96;
         color: var(--link-hover) !important;
-        transition: all 250ms ease;
+        transition: all 250ms ease !important;
     }
-
-.activeLink {
-    color: var(--link-hover) !important;
-}
 
     .navHamburgerMenuIcon {
         color: var(--primary-light);
     }
         .navHamburgerMenuIcon:hover {
-            scale: .97;
+            scale: .95;
             opacity: .8;
         }
 
 .navHamburgerMenu {
     display: flex;
-    align-items: left;
-    padding: .7rem 1.1rem !important;
-    background-color: #161616a8 !important;
+    align-items: center;
+    padding-top: 3rem !important;
+    background-color: #16161650 !important;
+    transition: all 250ms ease !important;
 }
-    .navMenuLink {
-        color: var(--primary-light) !important;
+    .navHamburgerMenuLinks {
+        margin: .4rem 0;
+        font-size: 1.5rem !important;
         font-weight: 600;
+        color: var(--primary-light) !important;
+        transition: all 250ms ease !important;
     }
-        .navMenuLink:hover {
-            scale: .99;
+        .navHamburgerMenuLinks:hover {
+            scale: .96;
             color: var(--link-hover) !important;
         }

@@ -1,13 +1,13 @@
 'use client'
 
 import React from 'react';
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button} from "@nextui-org/react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link } from "@nextui-org/react";
 import LogoRect from '../Logo/LogoRect';
 import InstagramIcon from '../Socials/Instagram';
 import ReserveBtn from '../ReserveBtn/NavReserveBtn';
 import Styles from './Nav.module.css';
 
-export default function App() {  
+export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const menuItems = [
     { name: "Home", link: "/" },
@@ -17,7 +17,8 @@ export default function App() {
 
   return (
     <Navbar className={Styles.nav} onMenuOpenChange={setIsMenuOpen} shouldHideOnScroll>
-      <NavbarContent>
+      <NavbarContent justify='center'>
+        {/* Nav Hamburger Menu */}
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className={`${Styles.navHamburgerMenuIcon} sm:hidden`}
@@ -29,21 +30,21 @@ export default function App() {
           </Link>
         </NavbarBrand>
       </NavbarContent>
-      {/* Nav Right */}
-      <NavbarContent className="hidden sm:flex gap-6" justify="center">
+      {/* Nav Links */}
+      <NavbarContent className={`${Styles.navLinksContainer} hidden sm:flex gap-4`} justify="center">
         <NavbarItem>
-          <Link className={Styles.navLink} href="/our-story">
+          <Link className={`${Styles.navLink}`} href="/our-story">
             Our Story
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className={Styles.navLink} href="/menu">
-            Menu
-          </Link>
+        <Link className={`${Styles.navLink}`} href="/menu">
+          Menu
+        </Link>
         </NavbarItem>
       </NavbarContent>
-      {/* Nav Left */}
-      <NavbarContent className="gap-4" justify="end">
+      {/* Nav Right */}
+      <NavbarContent className={`${Styles.navRightContainer} gap-4`} justify="end">
         <NavbarItem>
           <Link href='https://instagram.com/mountain.mixology' target='_blank'>
             <InstagramIcon />
@@ -59,7 +60,7 @@ export default function App() {
           <NavbarMenuItem key={`${item.name}-${index}`}>
             <Link
               color="foreground"
-              className={`${Styles.navMenuLink} w-full`}
+              className={`${Styles.navHamburgerMenuLinks} w-full`}
               href={item.link}
               size="lg"
             >
