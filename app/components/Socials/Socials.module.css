@@ -1,12 +1,12 @@
 .instagramIcon {
-    width: 1.8rem;
+    width: 1.7rem;
     margin-top: .5rem;
     border-radius: 9px;
-    transition: all 200ms ease;
+    transition: all 150ms ease;
 }
     .instagramIcon:hover {
-        scale: .94;
+        scale: .95;
         opacity: .9;
         background: linear-gradient(to right, purple, red);
-        transition: all 200ms ease;
+        transition: all 150ms ease;
     }

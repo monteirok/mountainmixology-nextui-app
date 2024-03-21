@@ -1,7 +1,4 @@
 import "./globals.css";
-import Cocktail1 from './components/Cards/Cocktail1'
-import Cocktail2 from './components/Cards/Cocktail2'
-import Cocktail3 from './components/Cards/Cocktail3'
 
 export default function Home() {
   return (
@@ -12,14 +9,7 @@ export default function Home() {
         <h5 className="mainSubHeader">Book your reservation now, and visit our Instagram for more!</h5>
       </div>
       {/* Content Container */}
-      <div className="mainContentContainer">
-        <Cocktail1 />
-        <Cocktail2 />
-        <Cocktail3 />
-      </div>
-      {/* Reserve Button */}
-      {/* <div className="reserveBtnContainer">
-        <ReserveBtn />
+      {/* <div className="mainContentContainer">
       </div> */}
     </main>
   );

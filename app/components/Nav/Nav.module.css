@@ -7,8 +7,14 @@
     margin-right: .5rem;
 }
 
+.divider {
+    height: 1.5rem !important;
+    background-color: var(--bg-dark) !important;
+    opacity: .4 !important;
+}
+
 .navLink {
-    font-size: 1.2rem !important;
+    /* font-size: 1rem !important; */
     font-weight: 600;
     color: var(--primary-light) !important;
     transition: all 250ms ease !important;

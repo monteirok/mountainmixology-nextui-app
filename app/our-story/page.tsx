@@ -1,12 +1,12 @@
 import Styles from './page.module.css'
+import Tabs from '../components/Tabs/Tabs'
 
-export default function Reserve() {
+export default function OurStory() {
     return (
-      <main className={Styles.mainContainer}>
-        <div className="mainHeadContainer">
-            <h1 className={Styles.mainHeader}>Our Story</h1>
-        </div>
-      </main>
+      <>
+        <h1 className={Styles.mainHeader}>Our Story</h1>
+        <Tabs />
+      </>
     );
   }
   

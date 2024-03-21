@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react';
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link } from "@nextui-org/react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link} from "@nextui-org/react";
 import LogoRect from '../Logo/LogoRect';
 import InstagramIcon from '../Socials/Instagram';
 import ReserveBtn from '../ReserveBtn/NavReserveBtn';
@@ -31,27 +31,29 @@ export default function App() {
         </NavbarBrand>
       </NavbarContent>
       {/* Nav Links */}
-      <NavbarContent className={`${Styles.navLinksContainer} hidden sm:flex gap-4`} justify="center">
+      <NavbarContent className={`${Styles.navLinksContainer} hidden sm:flex gap-6`} justify="center">
         <NavbarItem>
           <Link className={`${Styles.navLink}`} href="/our-story">
-            Our Story
+            OUR STORY
           </Link>
         </NavbarItem>
         <NavbarItem>
         <Link className={`${Styles.navLink}`} href="/menu">
-          Menu
+          MENU
         </Link>
         </NavbarItem>
       </NavbarContent>
       {/* Nav Right */}
-      <NavbarContent className={`${Styles.navRightContainer} gap-4`} justify="end">
+      <NavbarContent className={`${Styles.navRightContainer} gap-5`} justify="end">
+        {/* Reserve Btn */}
+        <NavbarItem>
+          <ReserveBtn />
+        </NavbarItem>
+        {/* Socials */}
         <NavbarItem>
           <Link href='https://instagram.com/mountain.mixology' target='_blank'>
             <InstagramIcon />
           </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <ReserveBtn />
         </NavbarItem>
       </NavbarContent>
       {/* Nav Hamburger Menu */}

@@ -5,7 +5,7 @@
 :root {
   --bg-dark: #161616;
   --primary: #0070ef;
-  --primary-light: #cecece;
+  --primary-light: #e0e0e0;
   --link-hover: #f5a523;
 }
 
@@ -37,7 +37,7 @@ html, body {
 .mainHeadContainer {
   width: 40rem;
   color: var(--primary-light);
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
   .mainHeader {
     margin: -.2rem 0;

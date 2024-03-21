@@ -10,10 +10,11 @@
   
   .mainHeadContainer {
     width: 40rem;
-    color: var(--primary-light);
   }
     .mainHeader {
-      margin: -.2rem 0;
+      margin: 2rem 0;
+      color: var(--primary-light);
+      text-align: center;
       font-size: 3rem;
       font-weight: 800;
     }

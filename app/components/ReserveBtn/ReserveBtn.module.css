@@ -1,10 +1,14 @@
 .navReserveBtn {
     font-weight: 700 !important;
     transition: all 250ms ease;
+    border-color: var(--primary-light) !important;
+    border-radius: 20px !important;
+    color: var(--primary-light) !important;
 }
     .navReserveBtn:hover {
         scale: .98;
         opacity: .8 !important;
+        border-color: var(--link-hover) !important;
         transition: all 250ms ease;
     }
 
